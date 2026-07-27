@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: fortu.co.uk
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 21 08:59:40 2026 GMT
+  hsts: null
+domains:
+- domain: fortu.co.uk
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: quarantine

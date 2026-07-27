@@ -1,7 +1,32 @@
 aid: fortu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fortu.png
 name: Fortu
-description: Fortu is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fortu (Fortu Wealth Ltd) is a London-based fintech, founded in 2019, offering
+  digital private banking for high-net-worth individuals and their businesses,
+  including borderless multi-currency accounts, payments, and a curated selection
+  of investment opportunities across fintech and real-estate-driven debt
+  strategies. Fortu also operates a business-to-business Banking-as-a-Service (BaaS)
+  platform that lets private banks, wealth managers, and multi-family offices roll
+  out their own branded investment and payments products, with automated payment
+  processing and an API-driven compliance-monitoring tool. Co-founded by co-CEOs
+  Firdavs Shakhidi and Azmat Sultanov, the company was selected for the 500 Global
+  startup accelerator and raised an oversubscribed crowdfunding round (~GBP 500k)
+  on Seedrs. This profile was surfaced as a 500 Global portfolio company and
+  enriched by the API Evangelist pipeline; Fortu does not currently publish a public
+  developer portal, API documentation, or OpenAPI, and its primary web deployment
+  was offline (HTTP 402, disabled deployment) at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/fortu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +34,23 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  No public developer/API surface found. fortu.co.uk returned HTTP 402
+  (DEPLOYMENT_DISABLED) and developer/docs/api/app/status/trust subdomains did not
+  resolve; no OpenAPI, packages, MCP, well-known, or security.txt available.
+  Only domain-level DNS/TLS security was probeable.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Private Banking
+- Wealth Management
+- Banking as a Service
+- Payments
+- Compliance
+- Embedded Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +60,16 @@ maintainers:
 common:
 - type: Website
   url: https://fortu.co.uk
+- type: DomainSecurity
+  url: security/fortu-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/fortuwealth/
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/fortu-wealth
+- type: CompaniesHouse
+  url: https://find-and-update.company-information.service.gov.uk/company/11966971
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
