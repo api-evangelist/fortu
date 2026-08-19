@@ -39,7 +39,7 @@ x-enrichment-note: >-
   (DEPLOYMENT_DISABLED) and developer/docs/api/app/status/trust subdomains did not
   resolve; no OpenAPI, packages, MCP, well-known, or security.txt available.
   Only domain-level DNS/TLS security was probeable.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
