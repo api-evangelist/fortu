@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "fortu",
+    "captured_at": "2026-10-11T185040",
+    "source_url": "https://fortu.co.uk",
+    "source_type": "Website",
+    "file": "fortu-2026-10-11T185040.png",
+    "bytes": 13942,
+    "capture": "playwright-local"
+  }
+]
